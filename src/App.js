@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Effectful from './Hooks/Effectful';
+import Stateful from './Hooks/Stateful';
+import Context from './Hooks/context';
+import RefHook from './Hooks/refHook';
+import MemoHook from './Hooks/memoHook';
+import Counter from './Project/counter';
+import SearchData from './Project/Search';
+import UserForm from './Project/Form';
+import QuizApp from './Project/quizApp';
+import TodoData from './Project/Todo';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {/* <Stateful /> */}
+      {/* <Effectful/> */}
+      {/* <Context/> */}
+      {/* <RefHook/> */}
+      {/* <MemoHook /> */}
+      {/* <Counter/> */}
+      {/* <SearchData/> */}
+      {/* <UserForm/> */}
+      {/* <QuizApp/> */}
+      <TodoData/>
     </div>
   );
 }

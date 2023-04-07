@@ -2,37 +2,168 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgb(14, 36, 0);
+  background: linear-gradient(90deg, rgba(14, 36, 0, 1) 0%, rgba(195, 179, 96, 1) 31%, rgba(192, 178, 97, 1) 69%, rgba(43, 136, 132, 1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  background: rgb(56, 195, 149);
+  height: 200px;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.register-form {
+  padding: 5px;
+}
+
+.input-field {
+  margin: 5px 0;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  width: 170px;
+  background: azure;
+  border: 1px solid grey;
+  color: black;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.success {
+  background: chartreuse;
+  font-size: small;
+  width: 200px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.error {
+  font-size: 8px;
+  display: block;
+  margin: 0px;
+  padding: 0;
+  color: red;
+}
+
+.question-container {
+  background: #4ea9e1;
+  width: 500px;
+  height: 60vh;
+  margin: 100px auto;
+  border: 1px solid #453422;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.question-section {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(226, 231, 240);
+  padding: 15px;
+  border: none;
+  margin: 10px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.option:hover {
+  background-color: #3c88b7;
+  color: white;
+  cursor: pointer;
+}
+
+.question-head {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0%;
+}
+
+.form {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form .todo-input {
+  padding: 8px;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form .todo-button {
+  padding: 10px;
+  background: rgba(43, 136, 132, 1);
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+}
+
+select {
+  padding: 0px;
+  height: 35px;
+  width: 150px;
+  border: none;
+  margin: 0px 20px;
+  color: #000;
+  border-radius: 2px;
+}
+
+.todo-list {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.todo {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 20px;
+  width: fit-content;
+  padding: 7px 0px;
+  border: 1px solid rgba(43, 136, 132, 1);
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.todo-item {
+  font-size: 14px;
+  margin: 0px 30px;
+  padding: 10px;
+  align-items: start;
+}
+
+.inner-button {
+  background: rgba(43, 136, 132, 1);
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
 }
